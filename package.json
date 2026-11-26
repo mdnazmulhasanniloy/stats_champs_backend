@@ -5,8 +5,8 @@
   "type": "commonjs",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
-    "dev": "nodemon server.js",
+    "start": "node init && node server",
+    "dev": "node init && nodemon server.js",
     "client": "npm start --prefix client",
     "serve": "concurrently \"npm run server\" \"npm run client\""
   },
